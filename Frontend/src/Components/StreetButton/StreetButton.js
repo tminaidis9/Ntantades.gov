@@ -16,7 +16,7 @@ const StreetButton = () => {
   };
 
   return (
-    <div className="input-container left-aligned"> {/* Χρησιμοποίησε left-aligned ή right-aligned */}
+    <div className="input-street-container left-aligned"> {/* Χρησιμοποίησε left-aligned ή right-aligned */}
       <label htmlFor="name-input" className="input-label">Οδός</label>
       <input
         id="name-input"

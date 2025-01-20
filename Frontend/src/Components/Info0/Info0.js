@@ -9,7 +9,7 @@ const Info0 = () => {
   };
 
   return (
-    <div className="info-container">
+    <div className="info0-container">
       <div
         className={`checkbox0 ${isChecked ? 'checked0' : ''}`}
         onClick={handleCheckboxClick}

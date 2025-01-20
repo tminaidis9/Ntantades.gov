@@ -1,48 +1,52 @@
-import React, { useState } from "react";
+﻿import React, { useState } from "react";
 import "./HostButton.css";
 
 const HostButton = () => {
-  const [selectedHost, setSelectedHost] = useState(""); // Επιλεγμένο φύλο
-  const [message, setMessage] = useState(""); // Μήνυμα επιτυχίας
-  const [showDropdown, setShowDropdown] = useState(false); // Εμφάνιση dropdown
+  const [gender, setGender] = useState("");
+  const [message, setMessage] = useState("");
+  const [showDropdown, setShowDropdown] = useState(false);
 
-  const handleHostSelect = (host) => {
-    setSelectedHost(host); // Καταχώρηση φύλου
-    setShowDropdown(false); // Κλείσιμο dropdown
-    setMessage("Η Επιλογή σας καταχωρήθηκε επιτυχώς!"); // Εμφάνιση μηνύματος
+  const handleIconClick = () => {
+    setShowDropdown(!showDropdown);
+  };
+
+  const handleGenderSelect = (selectedGender) => {
+    setGender(selectedGender);
+    setShowDropdown(false);
+    setMessage("Η Επιλογή καταχωρήθηκε επιτυχώς!");
     setTimeout(() => {
-      setMessage(""); // Απόκρυψη μηνύματος μετά από 5 δευτερόλεπτα
+      setMessage("");
     }, 5000);
   };
 
   return (
     <div className="host-button-container">
-      <label htmlFor="host-button-input" className="input-label">
-        Υπάρχει Δυνατότητα Φιλοξενίας στην Οικεία σας ;
+      <label htmlFor="host-input" className="input-label">
+        Υπάρχει δυνατότητα φιλοξενείας στο σπίτι σας ;
       </label>
       <div className="input-wrapper">
-        <button
-          id="host-button-input"
+        <input
+          id="family-input"
           className="custom-input"
-          onClick={() => setShowDropdown(!showDropdown)}
-        >
-          {selectedHost || "Επιλέξτε"}
-          <span className="dropdown-icon">▼</span>
+          type="text"
+          placeholder="Επιλέξτε"
+          value={gender}
+          readOnly
+        />
+        <button className="dropdown-icon" onClick={handleIconClick}>
+          ▼
         </button>
         {showDropdown && (
-          <div className="dropdown">
-            <div
-              className="dropdown-item"
-              onClick={() => handleHostSelect("Ναι")}
-            >
-              Ναι
-            </div>
-            <div
-              className="dropdown-item"
-              onClick={() => handleHostSelect("Όχι")}
-            >
-              Όχι
-            </div>
+          <div className="family-dropdown">
+            {["Ναι", "Όχι"].map((option) => (
+              <div
+                key={option}
+                className="dropdown-item"
+                onClick={() => handleGenderSelect(option)}
+              >
+                {option}
+              </div>
+            ))}
           </div>
         )}
       </div>

@@ -31,7 +31,7 @@ const BirthYearButton = () => {
   };
 
   return (
-    <div className="birth-year-container">
+    <div className="birth-year-container-argy">
       <label htmlFor="birth-year-input" className="input-label">
         Ημερομηνία Γέννησης
       </label>

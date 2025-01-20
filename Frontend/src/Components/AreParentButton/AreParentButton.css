@@ -1,4 +1,4 @@
-.gender-button-container {
+.areparent-button-container {
   font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
@@ -6,19 +6,20 @@
   margin: 10px;
 }
 
-.input-label {
+.areparent-button-container .input-label {
   font-size: 18px;
+  font-weight: bold;
   margin-bottom: 4px;
 }
 
-.input-wrapper {
+.areparent-button-container .input-wrapper {
   display: flex;
   align-items: center;
   position: relative; /* Για τοποθέτηση dropdown δίπλα */
-  width: 120px; /* Πλάτος του input */
+  width: 220px; /* Πλάτος του input */
 }
 
-.custom-input {
+.areparent-button-container .custom-input {
   font-size: 16px;
   padding: 10px;
   border: 2px solid #ccc;
@@ -29,11 +30,11 @@
   padding-right: 10px; /* Προσθέτουμε χώρο για το βέλος */
 }
 
-.custom-input::placeholder {
+.areparent-button-container .custom-input::placeholder {
   text-align: center; /* Κεντραρισμένο placeholder */
 }
 
-.dropdown-icon {
+.areparent-button-container .dropdown-icon {
   position: absolute;
   right: 5px;
   background: none;
@@ -43,7 +44,7 @@
   color: #000;
 }
 
-.gender-dropdown {
+.areparent-button-container .areparent-dropdown {
   position: absolute;
   top: 100%; /* Εμφανίζεται κάτω από το κουμπί */
   left: 0;
@@ -57,18 +58,19 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.dropdown-item {
+.areparent-button-container .dropdown-item {
   padding: 8px;
   cursor: pointer;
   text-align: center;
 }
 
-.dropdown-item:hover {
+.areparent-button-container .dropdown-item:hover {
   background-color: #f0f0f0;
 }
 
-.success-message {
+.areparent-button-container .success-message {
   color: green;
   font-size: 14px;
-  margin-top: 10px;
+  margin-left: 1050px;
+  margin-top: 490px;
 }

@@ -16,7 +16,7 @@ const IDButton = () => {
   };
 
   return (
-    <div className="input-container left-aligned"> {/* Χρησιμοποίησε left-aligned ή right-aligned */}
+    <div className="input-id-container left-aligned"> {/* Χρησιμοποίησε left-aligned ή right-aligned */}
       <label htmlFor="name-input" className="input-label">Αριθμός Ταυτότητας</label>
       <input
         id="name-input"

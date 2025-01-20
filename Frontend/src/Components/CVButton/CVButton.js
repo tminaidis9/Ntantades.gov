@@ -34,7 +34,7 @@ const CVButton = () => {
   };
 
      const handleBackClick = () => {
-     window.location.href = "Option1Page3";
+     window.location.href = "EpisinapsiArxeion";
   };
     const handleSubClick = () => {
      alert("Η Οριστικη Υποβολή πραγματοποιήθηκε!");
@@ -175,7 +175,7 @@ const CVButton = () => {
         </div>
       </div>
 
-               <div className="button-container">
+        <div className="button-container">
         <div className="back-button">
           <Back_Button onClickHandler={handleBackClick} />
         </div>

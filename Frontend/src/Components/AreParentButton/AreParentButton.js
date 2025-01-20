@@ -13,20 +13,20 @@ const AreParentButton = () => {
   const handleGenderSelect = (selectedGender) => {
     setGender(selectedGender);
     setShowDropdown(false);
-    setMessage("Το φύλο καταχωρήθηκε επιτυχώς!");
+    setMessage("Η Επιλογή σας καταχωρήθηκε επιτυχώς!");
     setTimeout(() => {
       setMessage("");
     }, 5000);
   };
 
   return (
-    <div className="gender-button-container">
-      <label htmlFor="gender-input" className="input-label">
+    <div className="areparent-button-container">
+      <label htmlFor="areparent-input" className="input-label">
         Είστε Γονέας
       </label>
       <div className="input-wrapper">
         <input
-          id="gender-input"
+          id="areparent-input"
           className="custom-input"
           type="text"
           placeholder="Επιλέξτε"
@@ -37,7 +37,7 @@ const AreParentButton = () => {
           ▼
         </button>
         {showDropdown && (
-          <div className="gender-dropdown">
+          <div className="areparent-dropdown">
             {["Ναι", "Όχι"].map((option) => (
               <div
                 key={option}

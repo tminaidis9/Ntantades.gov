@@ -6,7 +6,7 @@ const AMKAButton = () => {
 
   const handleKeyPress = (e) => {
     if (e.key === "Enter") {
-      setMessage("Η πόλη καταχωρήθηκε επιτυχώς!");
+      setMessage("Το ΑΜΚΑ καταχωρήθηκε επιτυχώς!");
       
       // Εξαφάνιση του μηνύματος μετά από 5 δευτερόλεπτα
       setTimeout(() => {
@@ -16,7 +16,7 @@ const AMKAButton = () => {
   };
 
   return (
-    <div className="input-container left-aligned"> {/* Χρησιμοποίησε left-aligned ή right-aligned */}
+    <div className="input-amka-container left-aligned"> {/* Χρησιμοποίησε left-aligned ή right-aligned */}
       <label htmlFor="name-input" className="input-label">ΑΜΚΑ</label>
       <input
         id="name-input"

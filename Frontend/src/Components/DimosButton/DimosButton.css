@@ -7,7 +7,7 @@
   gap: 10px;
 }
 
-.add-button {
+.butt-container .add-button {
   background-color: #007bff;
   color: white;
   border: none;
@@ -18,11 +18,11 @@
   margin-top: 10px;
 }
 
-.add-button:hover {
+.butt-container .add-button:hover {
   background-color: #0056b3;
 }
 
-.dropdown-wrapper {
+.butt-container .dropdown-wrapper {
   width: 100%;
   max-width: 600px; 
   display: flex;
@@ -30,14 +30,14 @@
   gap: 5px;
 }
 
-.dropdown-label {
+.butt-container .dropdown-label {
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 5px;
   color: #333;
 }
 
-.dropdown {
+.butt-container .dropdown {
   display: flex;
   align-items: center;
   border: 1px solid #ccc;
@@ -51,7 +51,7 @@
   justify-content: space-between;
 }
 
-.dropdown-input {
+.butt-container .dropdown-input {
   border: none;
   outline: none;
   flex-grow: 1;
@@ -59,36 +59,36 @@
   padding-left: 10px;
 }
 
-.dropdown-arrow {
+.butt-container .dropdown-arrow {
   cursor: pointer;
   font-size: 18px;
   margin-left: 10px; /* Απόσταση από το input */
   color: #333;
 }
 
-.dropdown-options {
+.butt-container .dropdown-options {
   position: absolute;
-  top: 65%; /* Τοποθέτηση ακριβώς κάτω από το πεδίο εισαγωγής */
-  left: 50%; /* Ευθυγράμμιση με το βελάκι */
+  top: 57%; 
+  left: 48%; /* Ευθυγράμμιση με το βελάκι */
   transform: translateX(50%); /* Κεντράρει το πλαίσιο ακριβώς δίπλα στο βελάκι */
   margin-top: 5px; /* Απόσταση από το input */
   background: white;
   border: 1px solid #ccc;
   border-radius: 5px;
-  max-height: 150px;
+  max-height: 290px;
   width: 200px;
   overflow-y: auto;
   z-index: 10;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.dropdown-option {
+.butt-container .dropdown-option {
   padding: 10px;
   font-size: 14px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
-.dropdown-option:hover {
+.butt-container .dropdown-option:hover {
   background-color: #f0f0f0;
 }

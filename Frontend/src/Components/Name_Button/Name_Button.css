@@ -1,61 +1,48 @@
 /* Κοινά στυλ για όλα τα κουμπιά */
-.input-container {
+.input-container-name-argy {
   display: flex;
   flex-direction: column;
   font-family: Arial, sans-serif;
 }
 
-.input-label {
+.input-container-name-argy .input-label {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 5px;
 }
 
-.custom-input {
+.input-container-name-argy .custom-input {
   width: 300px;
   padding: 10px;
-  border: 2px solid #ccc !important; /* Το !important διασφαλίζει ότι αυτό το στυλ θα εφαρμοστεί */
+  border: 2px solid #ccc !important;
   border-radius: 15px;
   font-size: 16px;
   outline: none;
 }
 
-.custom-input:focus {
+.input-container-name-argy .custom-input:focus {
   border-color: #4caf50 !important;
   box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
 }
 
-
-.success-message {
-  position: absolute; /* Το μήνυμα τοποθετείται σε σχέση με το container */
-  top: calc(100% + 10px); /* Εμφανίζεται κάτω από τα κουμπιά */
-  left: 50%; /* Κεντράρει το μήνυμα */
-  transform: translateX(-50%); /* Εξασφαλίζει τέλειο κεντράρισμα */
-  font-size: 14px;
-  color: green;
-  background: #f0f0f0; /* Απαλό φόντο για το μήνυμα */
-  padding: 10px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ελαφριά σκιά για καλύτερη ορατότητα */
-  z-index: 10; /* Διασφαλίζει ότι εμφανίζεται πάνω από άλλα στοιχεία */
-  opacity: 0; /* Αρχικά αόρατο */
-  transition: opacity 0.3s ease; /* Ομαλή μετάβαση στην εμφάνιση */
-}
-
-.success-message.active {
-  opacity: 1; /* Το μήνυμα εμφανίζεται */
+.input-container-name-argy .success-message {
+  margin-top: 200px;
+  margin-left:270px;
+  color: #4caf50;
+  font-weight: bold;
 }
 
 /* Στυλ για κουμπί αριστερά */
-.input-container.left-aligned {
+.input-container-name-argy .input-container.left-aligned {
   align-items: flex-start; /* Ευθυγράμμιση αριστερά */
   margin-left: 20px; /* Απόσταση από την αριστερή πλευρά */
 }
 
 /* Στυλ για κουμπί δεξιά */
-.input-container.right-aligned {
+.input-container-name-argy .input-container.right-aligned {
   align-items: flex-start; /* Ευθυγράμμιση δεξιά */
   margin-right: 20px; /* Απόσταση από τη δεξιά πλευρά */
 }
+
 
 

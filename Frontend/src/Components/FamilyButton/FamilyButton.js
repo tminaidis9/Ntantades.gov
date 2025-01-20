@@ -13,20 +13,20 @@ const FamilyButton = () => {
   const handleGenderSelect = (selectedGender) => {
     setGender(selectedGender);
     setShowDropdown(false);
-    setMessage("Το φύλο καταχωρήθηκε επιτυχώς!");
+    setMessage("Η Οικογενειακή Κατάσταση καταχωρήθηκε επιτυχώς!");
     setTimeout(() => {
       setMessage("");
     }, 5000);
   };
 
   return (
-    <div className="gender-button-container">
-      <label htmlFor="gender-input" className="input-label">
+    <div className="family-button-container">
+      <label htmlFor="family-input" className="input-label">
         Οικογενειακή Κατάσταση
       </label>
       <div className="input-wrapper">
         <input
-          id="gender-input"
+          id="family-input"
           className="custom-input"
           type="text"
           placeholder="Επιλέξτε"
@@ -37,7 +37,7 @@ const FamilyButton = () => {
           ▼
         </button>
         {showDropdown && (
-          <div className="gender-dropdown">
+          <div className="family-dropdown">
             {["Άγαμος/η", "Έγγαμος/η"].map((option) => (
               <div
                 key={option}

@@ -12,9 +12,12 @@ import FileButton from "../../Components/FileButton/FileButton";
 import Back_Button from "../../Components/Back_Button/Back_Button"; 
 import Front_Button from "../../Components/Front_Button/Front_Button"; 
 
-function Option1Page3() {
+function EpisinapsiArxeion() {
   const handleCreateClick = () => {
     window.location.href = "CV"; // Replace with your desired URL
+  };
+   const handleMoreClick = () => {
+    window.location.href = "Details"; // Replace with your desired URL
   };
 
   const handleAddClick = () => {
@@ -45,11 +48,11 @@ function Option1Page3() {
     window.location.href = "CV"; // Same as "Create" button URL
   };
     const handleBackClick = () => {
-     window.location.href = "Option1Page2";
+     window.location.href = "ProsopikaStoixeia";
   };
 
   const handleFrontClick = () => {
-     window.location.href = "Option1Page4";
+     window.location.href = "DhmiourgiaAggelias";
   };
 
 
@@ -85,10 +88,10 @@ function Option1Page3() {
 			</div>
 
 			<div className="buttons-container">
-				<MoreButton type="create" onClick={handleCreateClick} />
+				<MoreButton type="create" onClick={handleMoreClick} />
 				<div className="small-buttons">
 					<MoreButton type="cancel" onClick={handleCancelClick} />
-					<MoreButton type="edit" onClick={handleEditClick} />
+					<MoreButton type="edit" onClick={handleMoreClick} />
 				</div>
 			</div>
 			</div>
@@ -98,8 +101,8 @@ function Option1Page3() {
 		<p> Σε περίπτωση που δεν εμφανίζεται η πράσινη ένδειξη σε κάποιο πιστοποιητικό , επικοινωνήστε με τον γιατρό σας</p>
 
 
-	<div className="name-buttons-container">
-		<p>  Παθολόγος </p>
+	<div className="name-p-buttons-container">
+		<div className="letter-title">  Παθολόγος </div>
 		<div className="buttons-container">
 			<FileButton type="create" onClick={handleAddClick} />
 			<div className="small-buttons">
@@ -109,8 +112,8 @@ function Option1Page3() {
 		</div>
       </div>
 
-	  <div className="name-buttons-container">
-		<div>Δερματολόγος</div>
+	  <div className="name-d-buttons-container">
+		<div className="letter-title">Δερματολόγος</div>
 		<div className="buttons-container">
 			<FileButton type="create" onClick={handleAddClick} />
 			<div className="small-buttons">
@@ -120,8 +123,8 @@ function Option1Page3() {
 		</div>
       </div>
 
-	  <div className="name-buttons-container">
-		<div>Ψυχικής Υγείας</div>
+	  <div className="name-i-buttons-container">
+		<div className="letter-title">Ψυχικής Υγείας</div>
 		<div className="buttons-container">
 			<FileButton type="create" onClick={handleAddClick} />
 			<div className="small-buttons">
@@ -173,4 +176,4 @@ function Option1Page3() {
 	);
 };
 
-export default Option1Page3;
+export default EpisinapsiArxeion;

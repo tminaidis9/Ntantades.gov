@@ -9,19 +9,17 @@ const Info3 = () => {
   };
 
   return (
-    <div className="info-container">
+    <div className="info3-container">
       <div
-        className={`checkbox3 ${isChecked ? 'checked' : ''}`}
+        className={`checkbox3 ${isChecked ? 'checked3' : ''}`}
         onClick={handleCheckboxClick}
       >
         {isChecked && <div className="tick">✔</div>}
       </div>
       <p className="info-text">
-      Η αίτηση επέχει θέση υπεύθυνης δήλωσης του άρθρου 8 του ν. 1599/1986 και η ανακρίβεια των δηλούμενων στοιχείων επισύρει τις προβλεπόμενες ποινικές και διοικητικές κυρώσεις.
-
+             Η αίτηση επέχει θέση υπεύθυνης δήλωσης του άρθρου 8 του ν. 1599/1986 και η ανακρίβεια των δηλούμενων στοιχείων επισύρει τις προβλεπόμενες ποινικές και διοικητικές κυρώσεις.
       </p>
     </div>
   );
 };
-
 export default Info3;

@@ -29,13 +29,13 @@ import IDButton from "../../Components/IDButton/IDButton";
 import DOYButton from "../../Components/DOYButton/DOYButton";
 import HostButton from "../../Components/HostButton/HostButton";
 
-function Option1Page2() {
+function ProsopikaStoixeia() {
   const handleBackClick = () => {
-     window.location.href = "Option1Page1";
+     window.location.href = "Eisagogi";
   };
 
   const handleFrontClick = () => {
-    window.location.href = "Option1Page3";
+    window.location.href = "EpisinapsiArxeion";
   };
 
   return (
@@ -47,9 +47,9 @@ function Option1Page2() {
       <Breadcrumb />
       <Progress_Bar2 />
 
-      <div className="section-title">Ενότητα Β - Βασικά Στοιχεία</div>
+      <h2>Ενότητα Β - Βασικά Στοιχεία</h2>
       <div className="section-divider"></div>
-      <div className="subsection-title">Προσωπικά Στοιχεία</div>
+      <h3>Προσωπικά Στοιχεία</h3>
 
       {/* Στοιχεία σε 2 στήλες */}
       <div className="name-buttons-container">
@@ -86,7 +86,7 @@ function Option1Page2() {
 
       <div className="section-divider"></div>
 
-      <div className="subsection-title">Στοιχεία Επικοινωνίας</div>
+      <h3>Στοιχεία Επικοινωνίας</h3>
 
       {/* Στοιχεία Επικοινωνίας */}
       <div className="name-buttons-container">
@@ -111,7 +111,7 @@ function Option1Page2() {
       </div>
 
       <div className="section-divider"></div>
-      <div className="subsection-title">Δυνατότητα Φιλοξενίας</div>
+      <h3>Δυνατότητα Φιλοξενίας</h3>
       <div><HostButton /></div>
 
       <div className="buttonas2-container">
@@ -131,5 +131,5 @@ function Option1Page2() {
   );
 }
 
-export default Option1Page2;
+export default ProsopikaStoixeia;
 

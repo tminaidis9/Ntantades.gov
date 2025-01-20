@@ -16,7 +16,7 @@ const CountyButton = () => {
   };
 
   return (
-    <div className="input-container left-aligned"> {/* Χρησιμοποίησε left-aligned ή right-aligned */}
+    <div className="input-county-container left-aligned"> {/* Χρησιμοποίησε left-aligned ή right-aligned */}
       <label htmlFor="name-input" className="input-label">Νομός</label>
       <input
         id="name-input"

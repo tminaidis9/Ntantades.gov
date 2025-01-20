@@ -9,16 +9,15 @@ const Info2 = () => {
   };
 
   return (
-    <div className="info-container">
+    <div className="info2-container">
       <div
-        className={`checkbox2 ${isChecked ? 'checked' : ''}`}
+        className={`checkbox2 ${isChecked ? 'checked2' : ''}`}
         onClick={handleCheckboxClick}
       >
         {isChecked && <div className="tick">✔</div>}
       </div>
       <p className="info-text">
-        Υποχρεούμαι να δηλώσω οποιαδήποτε μεταβολή των στοιχείων που καταχωρούνται στο Μητρώο Επιμελητών εντός δέκα (10) ημερών από την επέλευση της μεταβολής αυτών
-
+        Υποχρεούμαι να δηλώσω οποιαδήποτε μεταβολή των στοιχείων που καταχωρούνται στο Μητρώο Επιμελητών εντός δέκα (10) ημερών από την επέλευση της μεταβολής αυτών.
       </p>
     </div>
   );

@@ -16,20 +16,20 @@ footer {
   margin-top: auto; /* Το footer θα πάει στο κάτω μέρος */
 }
 
-.back-button, .front-button  {
+.Details .back-button, .front-button  {
   flex: 1;
   max-width: 200px;
 }
 
-.back-button {
+.Details .back-button {
   text-align: left;
 }
 
-.front-button {
+.Details .front-button {
   text-align: right;
 }
 
-.buttonas-container {
+.Details .buttonas-container {
   display: flex;
   justify-content: center;
   align-items: center; /* Κεντράρει τα κουμπιά κατακόρυφα */

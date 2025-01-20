@@ -16,7 +16,7 @@ const StreetNumberButton = () => {
   };
 
   return (
-    <div className="input-container right-aligned"> {/* Χρησιμοποίησε left-aligned ή right-aligned */}
+    <div className="input-street-number-container right-aligned"> {/* Χρησιμοποίησε left-aligned ή right-aligned */}
       <label htmlFor="name-input" className="input-label">Αριθμός</label>
       <input
         id="name-input"

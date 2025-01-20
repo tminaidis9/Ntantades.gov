@@ -13,12 +13,12 @@
   background-color: #f7fbff;
 }
 
-.day-buttons {
+.day-buttons-container .day-buttons {
   display: flex;
   gap: 10px;
 }
 
-.day-button {
+.day-buttons-container .day-button {
   padding: 10px 20px;
   background-color: #a4d3f5; /* Πιο σκούρο χρώμα */
   border: 2px solid #bcdff6; /* Προσθήκη περιγράμματος */
@@ -28,17 +28,17 @@
   transition: background-color 0.3s, transform 0.2s;
 }
 
-.day-button:hover {
+.day-buttons-container .day-button:hover {
   background-color: #92c1e6; /* Χρώμα hover */
   transform: scale(1.05); /* Ελαφριά μεγέθυνση */
 }
 
-.day-button:active {
+.day-buttons-container .day-button:active {
   background-color: #7fb3d4; /* Χρώμα όταν πατιέται */
 }
 
 /* Περιοχή επιλογών ώρας */
-.time-selector {
+.day-buttons-container .time-selector {
   border: 1px solid #d6eaff;
   border-radius: 8px;
   padding: 10px;
@@ -47,30 +47,30 @@
   margin-bottom: 20px;
 }
 
-.time-selector label {
+.day-buttons-container .time-selector label {
   display: block;
   margin-bottom: 10px;
   cursor: pointer;
 }
 
-.time-selector input {
+.day-buttons-container .time-selector input {
   margin-right: 10px;
 }
 
 /* Περίληψη επιλογών */
-.selection-summary {
+.day-buttons-container .selection-summary {
   border: 1px solid #d6eaff;
   border-radius: 8px;
   padding: 15px;
   background-color: #f7fbff;
 }
 
-.selection-summary table {
+.day-buttons-container .selection-summary table {
   width: 100%;
   border-collapse: collapse;
 }
 
-.selection-summary th,
+.day-buttons-container .selection-summary th,
 .selection-summary td {
   text-align: left;
   padding: 10px;
@@ -78,11 +78,32 @@
 }
 
 /* Κουμπιά ακύρωσης και επεξεργασίας */
-.buttons {
+.day-buttons-container .buttons {
   margin-top: 15px;
   display: flex;
   gap: 10px;
 }
+
+.day-buttons-container th {
+  text-align: center; 
+  vertical-align: middle; 
+  width: 100px; 
+}
+
+.day-buttons-container td {
+  width: 200px;
+  text-align: left; 
+  white-space: nowrap;
+  overflow-x: auto; 
+}
+
+.day-buttons-container table {
+  table-layout: fixed; 
+  width: 100%; 
+}
+
+
+
 
 button {
   padding: 10px 20px;

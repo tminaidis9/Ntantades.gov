@@ -7,7 +7,7 @@ import SubButton from "../../Components/SubButton/SubButton";
 
 function Details() {
    const handleBackClick = () => {
-     window.location.href = "Option1Page3";
+     window.location.href = "EpisinapsiArxeion";
   };
     const handleSubClick = () => {
      alert("Η Οριστικη Υποβολή πραγματοποιήθηκε!");
