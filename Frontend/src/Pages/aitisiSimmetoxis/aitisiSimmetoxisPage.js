@@ -5,7 +5,7 @@ import Footer from "../../Components/Footer/Footer";
 import Breadcrumb from "../../Components/Breadcrumb/Breadcrumb";
 import AitiseisSimmetoxis from "../../Components/AitiseisSimmetoxis/AitiseisSimmetoxis";
 
-import "./aitisiSimmetoxisPage.css";
+import "./AitisiSimmetoxisPage.css";
 
 function AitisiSimmetoxisPage() {
   const useDocumentTitle = (title) => {
