@@ -22,13 +22,16 @@ const Introduction = () => {
                 Για την εργασία προσπαθήσαμε να χωρίσουμε το project σε τρια κομμάτια. 
             </p>
             <p style={styles.description}>
-                Ο θοδωρής ανέλαβε την δημιουργία του project, την 
+                Ο Θοδωρής ανέλαβε την δημιουργία του project, την 
                 δημιουργία git repository καθώς και των κατάλληλων branches, καθώς και τις σελίδες μέχρι το login, και όλες όσες αγορούν
                 τον επαγγελματία <b>(δηλαδή από το κουμπί Αίτηση για την παροχή της υπηρεσίας φύλαξης και την επιλογή επιμελητή /τριας
                     (ωφελούμενο πρόσωπο)</b> και μετά). Επίσης δημιούργησε αυτό το introduction, όπως και άλλες απαραίτητες λειτουργίες, όπως
                 το Routing, Breadcrumb, NavBar, Footer.
             </p>
-
+            <p style={styles.description}>
+            Η Αργυρώ ανέλαβε τις σελίδες : Eisagogi , ProsopikaStoixeia , EpisinapsiArxeion , DhmiourgiaAggelias , TelikiYpobolh , Details , CV ,
+            οπως επίσης και όλα τα components που χρησιμοποιουν 
+            </p>
             <button style={styles.button} onClick={() => navigate(Routes.Home) }>Start</button>
         </div>
     );

@@ -16,7 +16,7 @@ const PostalCodeButton = () => {
   };
 
   return (
-    <div className="input-container left-aligned"> {/* Χρησιμοποίησε left-aligned ή right-aligned */}
+    <div className="input-post-code-container left-aligned"> {/* Χρησιμοποίησε left-aligned ή right-aligned */}
       <label htmlFor="name-input" className="input-label">Ταχυδρομικός Κώδικας</label>
       <input
         id="name-input"

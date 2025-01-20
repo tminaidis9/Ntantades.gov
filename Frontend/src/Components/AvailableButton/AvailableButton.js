@@ -19,12 +19,39 @@ const AvailableButton = () => {
     }
   };
 
-  const handleTimeChange = (time, allDay = false) => {
-    setSelectedTimes((prev) => ({
+const handleTimeChange = (time, allDay = false) => {
+  setSelectedTimes((prev) => {
+    const currentTimes = prev[currentDay] || [];
+
+    // Αν είναι "Όλη μέρα διαθέσιμος/η", αντικατάστησε όλη τη λίστα
+    if (allDay) {
+      return {
+        ...prev,
+        [currentDay]: ["Όλη μέρα διαθέσιμος/η"],
+      };
+    }
+
+    // Εναλλαγή (προσθήκη ή αφαίρεση) της ώρας
+    const isTimeSelected = currentTimes.includes(time);
+    const updatedTimes = isTimeSelected
+      ? currentTimes.filter((t) => t !== time) // Αφαίρεση της ώρας αν υπάρχει
+      : [...currentTimes, time]; // Προσθήκη της ώρας αν δεν υπάρχει
+
+    // Ταξινόμηση των ωρών σε αύξουσα σειρά
+    const sortedTimes = updatedTimes.sort((a, b) => {
+      const [aHours, aMinutes] = a.split(":").map(Number);
+      const [bHours, bMinutes] = b.split(":").map(Number);
+
+      return aHours === bHours ? aMinutes - bMinutes : aHours - bHours;
+    });
+
+    return {
       ...prev,
-      [currentDay]: allDay ? ["Όλη μέρα διαθέσιμος/η"] : [...(prev[currentDay] || []), time],
-    }));
-  };
+      [currentDay]: sortedTimes,
+    };
+  });
+};
+
 
   const clearSelections = () => {
     setSelectedDays([]);
@@ -87,7 +114,7 @@ const AvailableButton = () => {
             <button className="cancel" onClick={clearSelections}>
               Ακύρωση
             </button>
-            <button className="edit">Επεξεργασία</button>
+        
           </div>
         </div>
       )}

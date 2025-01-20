@@ -1,0 +1,45 @@
+/* Κοινά στυλ για όλα τα κουμπιά */
+.input-street-container {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+}
+
+.input-street-container .input-label {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.input-street-container .custom-input {
+  width: 300px;
+  padding: 10px;
+  border: 2px solid #ccc !important;
+  border-radius: 15px;
+  font-size: 16px;
+  outline: none;
+}
+
+.input-street-container .custom-input:focus {
+  border-color: #4caf50 !important;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+.input-street-container .success-message {
+  margin-top: 910px;
+  margin-left: 280px;
+  color: #4caf50;
+  font-weight: bold;
+}
+
+/* Στυλ για κουμπί αριστερά */
+.input-street-container .left-aligned {
+  align-items: flex-start; /* Ευθυγράμμιση αριστερά */
+  margin-left: 20px; /* Απόσταση από την αριστερή πλευρά */
+}
+
+/* Στυλ για κουμπί δεξιά */
+.input-street-container .right-aligned {
+  align-items: flex-start; /* Ευθυγράμμιση δεξιά */
+  margin-right: 20px; /* Απόσταση από τη δεξιά πλευρά */
+}

@@ -12,7 +12,7 @@ body {
 }
 
 /* Το περιεχόμενο στο κέντρο του πλαισίου */
-.info-component {
+.info-component-wrapper  .info-component {
   max-width: 1200px; /* Μέγιστο πλάτος για το περιεχόμενο */
   margin: 0 auto; /* Κεντράρει το περιεχόμενο */
   padding: 20px; /* Εσωτερικό padding */
@@ -25,7 +25,7 @@ body {
 
 
 /* Στυλ για το κουμπί "Προφίλ" */
-.profile-button {
+.info-component-wrapper  .profile-button {
   display: inline-block !important;
   color: white;
   background-color: green !important;

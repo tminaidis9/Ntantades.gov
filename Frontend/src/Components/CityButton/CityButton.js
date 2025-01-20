@@ -16,7 +16,7 @@ const CityButton = () => {
   };
 
   return (
-    <div className="input-container right-aligned"> {/* Χρησιμοποίησε left-aligned ή right-aligned */}
+    <div className="input-city-container right-aligned"> {/* Χρησιμοποίησε left-aligned ή right-aligned */}
       <label htmlFor="name-input" className="input-label">Πόλη</label>
       <input
         id="name-input"

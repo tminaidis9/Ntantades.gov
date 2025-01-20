@@ -1,4 +1,4 @@
-.page-content {
+.Option1Page3 .page-content {
   flex: 1;
   width: 100%;
   display: flex;
@@ -11,11 +11,11 @@
   min-height: 100vh;
   width: 85%;          /* Πλάτος 85% της οθόνης */
   margin: 0 auto;      /* Κεντράρισμα του πλαισίου */
-  background: rgba(255, 255, 255, 0.7);    /* Λευκό φόντο */
+  background: rgba(255, 255, 255, 1);    /* Λευκό φόντο */
   font-family: 'Arial', sans-serif;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  /* Προαιρετικό: προσθέτει μια απαλή σκιά */
 }
-.content-wrapper {
+.Option1Page3 .content-wrapper {
   width: 80%;
   max-width: 1200px;
 }
@@ -23,35 +23,43 @@
  background:#D3D3D3;
 }
 
-.section-divider {
+.Option1Page3 .section-divider {
   height: 1px;
   background-color: #666;
   margin: 20px 0;
   width: 100%;
 }
 
-.section-title {
+.Option1Page3 .section-title {
   font-size: 20px;
   font-weight: bold;
   margin: 20px 0 10px;
 }
 
-.subsection-title {
+
+
+.Option1Page3 .subsection-title {
   font-size: 16px;
   font-weight: bold;
   margin: 15px 0;
 }
 
+.Option1Page3 .letter-title {
+  font-size: 18px;
+  margin: 15px 0;
+}
 
-.buttons-container {
+
+
+.Option1Page3 .buttons-container {
   display: flex;
-  flex-direction: column; /* Κάθετη διάταξη */
-  align-items: center; /* Κεντράρει το μπλε κουμπί */
-  gap: 15px; /* Απόσταση μεταξύ του μπλε κουμπιού και των άλλων */
-  padding: 0; /* Καμία εσωτερική απόσταση */
-  border: none; /* Αφαίρεση περιγράμματος */
-  background-color: transparent; /* Καμία φόντο */
-  margin: 0 auto; /* Κεντράρισμα του container στη σελίδα */
+  flex-direction: column; 
+  align-items: center; 
+  gap: 15px; 
+  padding: 0; 
+  border: none; 
+  background-color: transparent; 
+  margin: 0 auto;
 }
 
 #create {
@@ -85,7 +93,7 @@
 }
 
 /* Στοίχιση του κόκκινου και πράσινου κουμπιού στην ίδια ευθεία */
-.small-buttons {
+.Option1Page3 .small-buttons {
   display: flex;
   gap: 10px; /* Απόσταση ανάμεσα στα δύο κουμπιά */
   justify-content: center; /* Κεντράρισμα κάτω από το μπλε κουμπί */
@@ -104,7 +112,7 @@ button {
 button:hover {
   opacity: 0.9; /* Εφέ hover */
 }
-.info-buttons-container {
+.Option1Page3 .info-buttons-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -113,25 +121,55 @@ button:hover {
   gap: 20px;
 }
 
-.name-buttons-container {
+.Option1Page3 .name-buttons-container {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 500px;
-  margin: 20px auto;
+  margin: 50px auto;
   width: 100%;
 }
 
-.back-button, .front-button {
+.Option1Page3 .name-d-buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 500px;
+  margin: 50px auto;
+  width: 100%;
+}
+
+.Option1Page3 .name-p-buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 500px;
+  margin: 50px auto;
+  margin-left: 15px;
+  width: 100%;
+}
+
+.Option1Page3 .name-i-buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 500px;
+  margin: 50px auto;
+  margin-right: 50px;
+  width: 100%;
+}
+
+
+.Option1Page3 .back-button, .front-button {
   flex: 1;
   max-width: 200px;
 }
 
-.back-button {
+.Option1Page3 .back-button {
   text-align: left;
 }
 
-.front-button {
+.Option1Page3 .front-button {
   text-align: right;
 }
 
@@ -139,11 +177,11 @@ footer {
   margin-top: auto;
 }
 
-.buttonas2-container {
+.Option1Page3 .buttonas2-container {
   display: flex;
   justify-content: center;
   align-items: center; /* Κεντράρει τα κουμπιά κατακόρυφα */
-  margin: 20px auto; /* Προσθήκη κενών γύρω από τα κουμπιά */
+  margin: 80px auto; /* Προσθήκη κενών γύρω από τα κουμπιά */
   width: 90%; /* Το πλαίσιο των κουμπιών να καταλαμβάνει το 90% του πλάτους */
   max-width: 1200px; /* Μέγιστο πλάτος */
   gap: 400px; /* Απόσταση ανάμεσα στα κουμπιά */

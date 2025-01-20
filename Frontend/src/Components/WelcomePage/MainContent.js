@@ -14,7 +14,8 @@ const MainContent = () => {
 
     const handleConnectForProfessionals = () => {
 
-        const returnUrl = Routes.SearchProfessional; // Replace with your desired return URL
+        const returnUrl = Routes.Eisagogi; // Replace with your desired return URL
+        console.log('return Url ', { returnUrl });
         navigate(`${Routes.Login}?returnUrl=${encodeURIComponent(returnUrl)}`); // Navigate to the login page with returnUrl as a query parameter
     };
 
@@ -55,7 +56,7 @@ const MainContent = () => {
             </div>
 
             <div className='intro-buttons'>
-                <Button label='Εγγραφή στο μητρώο επιμελητών (επιμελητής/τρια)' onClick={() => navigate(Routes.Login)}> <IoIosArrowForward /> </Button>
+                <Button label='Εγγραφή στο μητρώο επιμελητών (επιμελητής/τρια)' onClick={handleConnectForProfessionals}> <IoIosArrowForward /> </Button>
                 <Button label='Αίτηση για την παροχή της υπηρεσίας φύλαξης και την
                     επιλογή επιμελητή /τριας (ωφελούμενο πρόσωπο)' onClick={handleConnectForParents}> <IoIosArrowForward /> </Button>
             </div>

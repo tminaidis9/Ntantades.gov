@@ -16,7 +16,7 @@ const EmailButton = () => {
   };
 
   return (
-    <div className="input-container right-aligned"> {/* Χρησιμοποίησε left-aligned ή right-aligned */}
+    <div className="input-email-container right-aligned"> {/* Χρησιμοποίησε left-aligned ή right-aligned */}
       <label htmlFor="name-input" className="input-label">Email</label>
       <input
         id="name-input"

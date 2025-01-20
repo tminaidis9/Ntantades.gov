@@ -11,17 +11,24 @@ import Info3 from "../../Components/Info3/Info3";
 import Back_Button from "../../Components/Back_Button/Back_Button";
 import SubButton from "../../Components/SubButton/SubButton"; 
 import ExitButton from "../../Components/ExitButton/ExitButton"; 
+import { useNavigate } from "react-router-dom";
+import { Routes } from "../../routes.js"; 
 
-function Option1Page5() {
-  const handleBackClick = () => {
-     window.location.href = "Option1Page4";
-  };
+function TelikiYpobolh() {
+
     const handleSubClick = () => {
      alert("Η Οριστικη Υποβολή πραγματοποιήθηκε!");
   };
 
-   const handleExitClick = () => {
-     window.location.href = "localhost:3000";
+ 
+   const navigate = useNavigate();
+
+  const handleExitClick = () => {
+      navigate(Routes.Home);
+  };
+
+  const handleBackClick = () => {
+      navigate(Routes.DhmiourgiaAggelias);
   };
 
 return(
@@ -67,4 +74,4 @@ return(
 );
 
 };
-export default Option1Page5;
+export default TelikiYpobolh;

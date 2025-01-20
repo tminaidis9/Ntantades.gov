@@ -16,7 +16,7 @@ const CellPhoneNumberButton = () => {
   };
 
   return (
-    <div className="input-container right-aligned"> {/* Χρησιμοποίησε left-aligned ή right-aligned */}
+    <div className="input-cellphone-container right-aligned"> {/* Χρησιμοποίησε left-aligned ή right-aligned */}
       <label htmlFor="name-input" className="input-label">Σταθερό</label>
       <input
         id="name-input"

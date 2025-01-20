@@ -13,7 +13,7 @@ body {
    background-color: #FFFFFF;
 }
 
-.header {
+.details-button-container .header {
   background-color: #4682B4;
   color: white;
   padding: 15px;
@@ -23,7 +23,7 @@ body {
   font-weight: bold;
 }
 
-.content-section {
+.details-button-container .content-section {
   padding: 25px 20px;
   text-align: center;
   max-width: 800px;
@@ -31,7 +31,7 @@ body {
   background-color: #FFFFFF;
 }
 
-.content-section h2 {
+.details-button-container .content-section h2 {
   color: #4682B4;
   font-size: 25px;
   font-weight: bold;
@@ -39,24 +39,24 @@ body {
   line-height: 4.9;
 }
 
-.content-section p {
+.details-button-container .content-section p {
   color: #4682B4;
   font-size: 16px;
   line-height: 1.8;
   margin: 0;
 }
 
-.content-section a {
+.details-button-container .content-section a {
   color: #191970;
   text-decoration: none;
   line-height: 1.8;
 }
 
-.content-section a:hover {
+.details-button-container .content-section a:hover {
   text-decoration: underline;
 }
 
-.divider {
+.details-button-container .divider {
   margin: 30px auto;
   border: none;
   border-top: 1px solid #ddd;

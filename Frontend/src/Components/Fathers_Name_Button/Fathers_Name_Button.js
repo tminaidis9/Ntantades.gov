@@ -16,7 +16,7 @@ const Fathers_Name_Button = () => {
   };
 
   return (
-    <div className="input-container left-aligned"> {/* Χρησιμοποίησε left-aligned ή right-aligned */}
+    <div className="input-container-fathers-name left-aligned"> {/* Χρησιμοποίησε left-aligned ή right-aligned */}
       <label htmlFor="name-input" className="input-label">Πατρώνυμο</label>
       <input
         id="name-input"

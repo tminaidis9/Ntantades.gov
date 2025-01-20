@@ -16,7 +16,7 @@ const Last_Name_Button = () => {
   };
 
   return (
-    <div className="input-container right-aligned"> {/* Χρησιμοποίησε left-aligned ή right-aligned */}
+    <div className="input-container-name-last-argy right-aligned"> {/* Χρησιμοποίησε left-aligned ή right-aligned */}
       <label htmlFor="name-input" className="input-label">Επίθετο</label>
       <input
         id="name-input"

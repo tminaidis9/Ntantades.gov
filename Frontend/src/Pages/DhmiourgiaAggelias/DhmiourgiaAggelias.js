@@ -10,14 +10,14 @@ import DimosButton from "../../Components/DimosButton/DimosButton";
 import AvailableButton from "../../Components/AvailableButton/AvailableButton"; 
 import NumberSelector from "../../Components/NumberSelector/NumberSelector"; 
 
-function Option1Page4() {
+function DhmiourgiaAggelias() {
 
   const handleBackClick = () => {
-     window.location.href = "Option1Page3";
+     window.location.href = "EpisinapsiArxeion";
   };
 
   const handleFrontClick = () => {
-     window.location.href = "Option1Page5";
+     window.location.href = "TelikiYpobolh";
   };
 
 
@@ -63,4 +63,4 @@ function Option1Page4() {
 
 };
 
-export default Option1Page4 ;
+export default DhmiourgiaAggelias ;

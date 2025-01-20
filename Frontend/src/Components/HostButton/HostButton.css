@@ -3,66 +3,73 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 10px 0;
+  margin: 10px;
 }
 
-.input-label {
-  font-size: 14px;
+.host-button-container .input-label {
+  font-size: 18px;
   font-weight: bold;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
-.input-wrapper {
+.host-button-container .input-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative; /* Για τοποθέτηση dropdown δίπλα */
+  width: 220px; /* Πλάτος του input */
+}
+
+.host-button-container .custom-input {
+  font-size: 16px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  width: 100%; /* Το input να γεμίζει το wrapper */
+  text-align: center;
   position: relative;
-  width: 200px;
+  padding-right: 10px; /* Προσθέτουμε χώρο για το βέλος */
 }
 
-.custom-input {
-  width: 100%;
-  padding: 10px 12px;
-  font-size: 14px;
+.host-button-container .custom-input::placeholder {
+  text-align: center; /* Κεντραρισμένο placeholder */
+}
+
+.host-button-container .dropdown-icon {
+  position: absolute;
+  right: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  color: #000;
+}
+
+.host-button-container .family-dropdown {
+  position: absolute;
+  top: 100%; /* Εμφανίζεται κάτω από το κουμπί */
+  left: 0;
+  z-index: 1000;
+  background: white;
   border: 1px solid #ccc;
   border-radius: 8px;
+  max-height: 150px;
+  overflow-y: auto;
+  width: 120px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.host-button-container .dropdown-item {
+  padding: 8px;
   cursor: pointer;
-  background-color: #fff;
-  text-align: left;
+  text-align: center;
 }
 
-.custom-input:focus {
-  outline: none;
-  border-color: #007bff;
-}
-
-.dropdown-icon {
-  float: right;
-  margin-left: auto;
-}
-
-.dropdown {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-top: 5px;
-  z-index: 1000;
-}
-
-.dropdown-item {
-  padding: 10px 12px;
-  font-size: 14px;
-  cursor: pointer;
-}
-
-.dropdown-item:hover {
+.host-button-container .dropdown-item:hover {
   background-color: #f0f0f0;
 }
 
-.success-message {
-  margin-top: 8px;
-  font-size: 14px;
+.host-button-container .success-message {
   color: green;
+  font-size: 14px;
+  margin-top: 1235px;
+  margin-left: 245px;
 }

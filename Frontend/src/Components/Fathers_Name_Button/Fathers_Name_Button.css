@@ -1,44 +1,45 @@
 /* Κοινά στυλ για όλα τα κουμπιά */
-.input-container {
+.input-container-fathers-name {
   display: flex;
   flex-direction: column;
   font-family: Arial, sans-serif;
 }
 
-.input-label {
+.input-container-fathers-name .input-label {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 5px;
 }
 
-.custom-input {
+.input-container-fathers-name .custom-input {
   width: 300px;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 2px solid #ccc !important;
   border-radius: 15px;
   font-size: 16px;
   outline: none;
 }
 
-.custom-input:focus {
-  border-color: #4caf50;
+.input-container-fathers-name .custom-input:focus {
+  border-color: #4caf50 !important;
   box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
 }
 
-.success-message {
-  margin-top: 10px;
+.input-container-fathers-name .success-message {
+  margin-top: 290px;
+  margin-left: 250px;
   color: #4caf50;
   font-weight: bold;
 }
 
 /* Στυλ για κουμπί αριστερά */
-.input-container.left-aligned {
+.input-container-fathers-name .left-aligned {
   align-items: flex-start; /* Ευθυγράμμιση αριστερά */
   margin-left: 20px; /* Απόσταση από την αριστερή πλευρά */
 }
 
 /* Στυλ για κουμπί δεξιά */
-.input-container.right-aligned {
+.input-container-fathers-name .right-aligned {
   align-items: flex-start; /* Ευθυγράμμιση δεξιά */
   margin-right: 20px; /* Απόσταση από τη δεξιά πλευρά */
 }

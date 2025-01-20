@@ -6,7 +6,7 @@ const DOYButton = () => {
 
   const handleKeyPress = (e) => {
     if (e.key === "Enter") {
-      setMessage("Το ΔΟΥ καταχωρήθηκε επιτυχώς!");
+      setMessage("Ο αριθμός ΔΟΥ καταχωρήθηκε επιτυχώς!");
       
       // Εξαφάνιση του μηνύματος μετά από 5 δευτερόλεπτα
       setTimeout(() => {
@@ -16,7 +16,7 @@ const DOYButton = () => {
   };
 
   return (
-    <div className="input-container right-aligned"> {/* Χρησιμοποίησε left-aligned ή right-aligned */}
+    <div className="input-doy-container right-aligned"> {/* Χρησιμοποίησε left-aligned ή right-aligned */}
       <label htmlFor="name-input" className="input-label">ΔΟΥ</label>
       <input
         id="name-input"

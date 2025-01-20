@@ -5,7 +5,7 @@
     font-family: 'Arial', sans-serif;
 }
 
-.checkbox {
+.info-container .checkbox {
   width: 100px; /* Μεγαλύτερο πλάτος */
   height: 25px; /* Μεγαλύτερο ύψος */
   border: 2px solid #000;
@@ -18,17 +18,17 @@
   transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-.checkbox.checked {
+.info-container .checkbox.checked {
   background-color: #007bff; /* Μπλε χρώμα */
   border-color: #007bff;
 }
 
-.tick {
+.info-container .tick {
   font-size: 20px; /* Μεγαλύτερο tick */
   color: #fff; /* ’σπρο tick */
 }
 
-.info-text {
+.info-container .info-text {
   font-size: 17px;
   line-height: 1.5;
   color: #333;

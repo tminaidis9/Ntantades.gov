@@ -6,7 +6,7 @@ const AFMButton = () => {
 
   const handleKeyPress = (e) => {
     if (e.key === "Enter") {
-      setMessage("ΤΟ ΑΦΜ καταχωρήθηκε επιτυχώς!");
+      setMessage("Το ΑΦΜ καταχωρήθηκε επιτυχώς!");
       
       // Εξαφάνιση του μηνύματος μετά από 5 δευτερόλεπτα
       setTimeout(() => {
@@ -16,7 +16,7 @@ const AFMButton = () => {
   };
 
   return (
-    <div className="input-container right-aligned"> {/* Χρησιμοποίησε left-aligned ή right-aligned */}
+    <div className="input-afm-container right-aligned"> {/* Χρησιμοποίησε left-aligned ή right-aligned */}
       <label htmlFor="name-input" className="input-label">ΑΦΜ</label>
       <input
         id="name-input"
