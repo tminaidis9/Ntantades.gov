@@ -37,7 +37,7 @@ import NtantaAgreementPage from "./Pages/NtantaAgreementsPage/NtantaAgreementsPa
 
 const router = createBrowserRouter([
   { path: Routes.Home, element: <App /> },
-  // { path: Routes.First, element: <Introduction /> },
+  { path: Routes.First, element: <Introduction /> },
   {
     path: `${Routes.Ntantades}`,
     element: (
