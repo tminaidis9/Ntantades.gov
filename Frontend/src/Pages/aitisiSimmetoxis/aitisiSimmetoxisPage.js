@@ -3,9 +3,9 @@
 import NavBar from "../../Components/NavBar/NavBar";
 import Footer from "../../Components/Footer/Footer";
 import Breadcrumb from "../../Components/Breadcrumb/Breadcrumb";
-import AitiseisSimmetoxis from "../../Components/AitiseisSimmetoxis/AitiseisSimmetoxis";
+import AitiseisSimmetoxis from "../../Components/aitiseisSimmetoxis/aitiseisSimmetoxis";
 
-import './aitisiSimmetoxisPage.css'
+import './AitisiSimmetoxisPage.css'
 
 function AitisiSimmetoxisPage() {
 

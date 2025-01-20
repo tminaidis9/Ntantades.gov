@@ -20,7 +20,7 @@ import DhmiourgiaAggelias from './Pages/DhmiourgiaAggelias/DhmiourgiaAggelias';
 import TelikiYpobolh from './Pages/TelikiYpobolh/TelikiYpobolh';
 import CV from './Pages/CV/CV';
 import Details from './Pages/Details/Details';
-import AitisiSimmetoxisPage from './Pages/aitisiSimmetoxis/aitisiSimmetoxisPage';
+import AitisiSimmetoxisPage from './Pages/AitisiSimmetoxis/AitisiSimmetoxisPage';
 import ApplicationPage from './Pages/ApplicationPage/ApplicationPage';
 import SearchProfessionalPage from './Pages/SearchProfessionalPage/SearchProfessionalPage';
 import MeetingsPage from './Pages/MeetingsPage/MeetingsPage';

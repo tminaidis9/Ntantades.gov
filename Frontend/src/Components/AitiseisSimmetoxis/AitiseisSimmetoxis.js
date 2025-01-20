@@ -1,7 +1,7 @@
 ﻿import { Button } from 'primereact/button';
 import { useNavigate } from "react-router-dom";
 
-import './AitiseisSimmetoxis.css'
+import './aitiseisSimmetoxis.css'
 import Application from './Application';
 import { Routes } from '../../routes';
 
