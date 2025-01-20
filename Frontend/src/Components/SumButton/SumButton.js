@@ -22,7 +22,7 @@ const SumButton = ({ type, onClick }) => {
   }
 
   return (
-    <button id={id} onClick={onClick}>
+    <button id={id} className='sumbutton-button' onClick={onClick}>
       {text}
     </button>
   );

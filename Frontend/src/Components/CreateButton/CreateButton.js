@@ -22,7 +22,7 @@ const CreateButton = ({ type, onClick }) => {
   }
 
   return (
-    <button id={id} onClick={onClick}>
+    <button id={id} className='createbutton-button' onClick={onClick}>
       {text}
     </button>
   );

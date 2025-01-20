@@ -22,7 +22,7 @@ const FileButton = ({ type, onClick }) => {
   }
 
   return (
-    <button id={id} onClick={onClick}>
+    <button id={id} className='filebutton-button' onClick={onClick}>
       {text}
     </button>
   );

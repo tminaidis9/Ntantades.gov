@@ -100,17 +100,17 @@
   width: 100%;
 }
 
-button {
-  font-family: Arial, sans-serif;
-  border: none; /* Αφαίρεση περιγράμματος */
-  background: none; /* Καμία φόντο */
-  box-shadow: none; /* Καμία σκιά */
-  cursor: pointer;
-  transition: opacity 0.3s ease;
+.Option1Page3 button {
+    font-family: Arial, sans-serif;
+    border: none; /* Αφαίρεση περιγράμματος */
+    background: none; /* Καμία φόντο */
+    box-shadow: none; /* Καμία σκιά */
+    cursor: pointer;
+    transition: opacity 0.3s ease;
 }
 
-button:hover {
-  opacity: 0.9; /* Εφέ hover */
+.Option1Page3 button:hover {
+    opacity: 0.9; /* Εφέ hover */
 }
 .Option1Page3 .info-buttons-container {
   display: flex;
