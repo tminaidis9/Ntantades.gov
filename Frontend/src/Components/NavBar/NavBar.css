@@ -14,11 +14,11 @@
     }
 
     .NavBar .NavBar-nav .accessibilityMenu {
-        display: flex;
-        align-items: center;
+        display: grid;
+        /* align-items: center; */
         justify-content: center;
-        width: 35px;
-        height: 35px;
+        width: 37px;
+        height: 37px;
         background-color: #0048FF;
         border: 2px solid white;
         border-radius: 50%;
@@ -27,7 +27,12 @@
         margin-right: 5px;
     }
 
-    .NavBar .NavBar-nav .accessibility .accessibilityTitle {
+    .NavBar .NavBar-nav .accessibilityMenu svg{
+/*        height: 20px;
+        width: 12px;*/
+    }
+
+        .NavBar .NavBar-nav .accessibility .accessibilityTitle {
         opacity: 0; /* Start as transparent */
         transition: opacity 0.3s ease;
     }
