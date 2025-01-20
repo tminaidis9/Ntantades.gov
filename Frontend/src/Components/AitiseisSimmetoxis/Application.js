@@ -18,9 +18,9 @@ function Application(props) {
     approved === 0
       ? "Αποδοχή"
       : approved === 1
-      ? "Απορριώμα"
+      ? "Επεξεργασία"
       : approved === 2
-      ? "Αναμονη"
+      ? "Επεξεργασία"
       : "";
 
   console.log("button label is ", buttonLabel);
@@ -46,12 +46,12 @@ function Application(props) {
 
   const typeLabel =
     approved === 0
-      ? "\u0388\u03B3\u03BA\u03C5\u03C1\u03B7" // ������
+      ? "\u0388\u03B3\u03BA\u03C5\u03C1\u03B7" 
       : approved === 1
-      ? "\u039C\u03B7 \u0388\u03B3\u03BA\u03C5\u03C1\u03B7" // �� ������
+      ? "\u039C\u03B7 \u0388\u03B3\u03BA\u03C5\u03C1\u03B7"
       : approved === 2
       ? "\u03A3\u03B5 \u03B1\u03BD\u03B1\u03BC\u03BF\u03BD\u03AE"
-      : ""; // �� �������
+      : ""; 
 
   return (
     <div className="application-container">
