@@ -80,7 +80,7 @@ function EpisinapsiArxeion() {
 			</div>
 
 			<div className="buttons-container">
-				<SumButton type="create" onClick={handleCreateClick} />
+				<SumButton type="create" onClick={handleAddClick} />
 				<div className="small-buttons">
 					<SumButton type="cancel" onClick={handleCancelClick} />
 					<SumButton type="edit" onClick={handleEditClick} />

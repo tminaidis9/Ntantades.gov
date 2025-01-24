@@ -25,7 +25,7 @@ function DetailsButton() {
         <h2>Πιστοποιητικό Πρώτων Βοηθειών</h2>
         <p>
          Σε περίπτωση που δεν διαθέτετε πιστοποιητικό ή βεβαίωση πρώτων βοηθειών και επιθυμείτε να αποκτήσετε πιστοποιητικό πρώτων βοηθειών του ΕΚΑΒ , συμπληρώστε την παρακάτω υπεύθυνη δήλωση και όπως την επισυνάψετε στο βιογραφικό σας{' '}    
-          <a href="https://www.gov.gr/el/processes/polites-kai-kathemeroteta/upeuthune-delose">
+          <a href="https://www.gov.gr/ipiresies/polites-kai-kathemerinoteta/psephiaka-eggrapha-gov-gr/ekdose-upeuthunes-deloses">
             Φόρμα Υπεύθυνης Δήλωσης
           </a>{' '}
         </p>
